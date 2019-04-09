@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+     /* dùng đệ qui;
+        function fibo(n) {
+            if (n==1 || n==0){
+                return 1;
+            } else {
+                return fibo(n-1) + fibo(n-2);
+            }
+        }
+        let i;
+        for ( i=0;i<20;i++){
+            document.write(' '+fibo(i));
+        }
+       */
+
+        //Khong dùng đệ qui
+        function fibo(n) {
+            let a =0;
+            let b =1;
+            let tong;
+            if (n ==0){
+                document.write(" "+n);
+            }
+            if (n==1){
+                document.write(" "+n);
+            } else if (n>=3) {
+                for (i=2;i<n;i++){
+                    tong = a + b;
+                    a = b;
+                    b = tong;
+                    document.write(" "+tong);
+                }
+            }
+
+        }
+        let m = 20;
+        fibo(m);
+    </script>
+</body>
+</html>

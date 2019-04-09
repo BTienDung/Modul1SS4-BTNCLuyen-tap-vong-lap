@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function kiemTra(n) {
+            if (n%7===0){
+                return true;
+            }
+        }
+        let count = 0;
+        let j = 7, tong =0;
+        while (count < 30){
+            if(kiemTra(j)){
+                count++;
+                tong = tong +j;
+            }
+            j++;
+
+        }
+        document.write('Tong 30 so la: ' +tong);
+    </script>
+</body>
+</html>

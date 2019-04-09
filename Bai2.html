@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let t= true;
+        let x;
+        x = parseInt(prompt('Nhập nhiệt độ'));
+        while ( t){
+            if (x >100){
+                alert('Nhiệt độ bạn nhập và quá lớn');
+                x = parseInt(prompt('Nhập nhiệt độ'));
+                t = true;
+            } else if(x < 20) {
+                alert('Nhiệt độ bạn nhập vào quá thấp');
+                x = parseInt(prompt('Nhập nhiệt độ'));
+                t = true;
+            } else if (20<=x && x<=100) {
+                alert('Nhiệt độ bạn nhập vào đã đúng');
+                t = false;
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

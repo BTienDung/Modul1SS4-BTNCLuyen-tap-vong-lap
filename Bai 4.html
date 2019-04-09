@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function fibo(n) {
+            let a = 0, b =1, tong;
+            if (n<1){
+                document.write(" "+n);
+                return n;
+            }
+            for (i=2;i<n;i++){
+                tong = a + b;
+                a = b;
+                b = tong;
+                if (tong % 5==0){
+                    document.write(" " +tong);
+                    break;
+                }
+            }
+        }
+        let m = 20;
+        fibo(m);
+    </script>
+</body>
+</html>
